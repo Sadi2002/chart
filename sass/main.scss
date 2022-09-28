@@ -65,13 +65,18 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 50%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 40%;
+    width: 60%;
 
     &__header {
       &__balance {
@@ -88,5 +93,11 @@ body {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 45%;
   }
 }
