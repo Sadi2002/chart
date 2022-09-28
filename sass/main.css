@@ -42,7 +42,7 @@ body {
 
 .container__header {
   width: 100%;
-  background-color: #ec775f;
+  background-color: #ec6246;
   padding: 2rem;
   border-radius: 1rem;
   color: #fffaf5;
@@ -95,5 +95,28 @@ body {
   background: none;
   border: 2px solid #fffaf5;
   left: -50%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 40%;
+  }
+  .container__header__balance {
+    gap: 0.7rem;
+  }
+  .container__header__balance-text {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .container__header__balance-sum {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
 }
 /*# sourceMappingURL=main.css.map */
