@@ -55,6 +55,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2rem;
 }
 
 .container__header__balance {
@@ -95,6 +96,157 @@ body {
   background: none;
   border: 2px solid #fffaf5;
   left: -50%;
+}
+
+.container__main {
+  padding: 2rem 2rem 2.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fffaf5;
+  border-radius: 1rem;
+}
+
+.container__main-header {
+  font-size: 2.2rem;
+  color: #382314;
+  margin-bottom: 4rem;
+}
+
+.container__main-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f8e9dd;
+}
+
+.container__main-chart__box {
+  width: 100%;
+  height: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1rem;
+}
+
+.container__main-chart__box-item {
+  width: 100%;
+  height: 30%;
+  background-color: #ec6246;
+  border-radius: 0.5rem;
+}
+
+.container__main-chart__box-item--aqua {
+  height: 90%;
+  background-color: #76b5bc;
+}
+
+.container__main-chart__box-item1 {
+  height: 30%;
+}
+
+.container__main-chart__box-item2 {
+  height: 60%;
+}
+
+.container__main-chart__box-item4 {
+  height: 55%;
+}
+
+.container__main-chart__box-item5 {
+  height: 40%;
+}
+
+.container__main-chart__box-item6 {
+  height: 75%;
+}
+
+.container__main-chart__box-item7 {
+  height: 45%;
+}
+
+.container__main-chart__box-text {
+  color: #93867b;
+  font-size: 1.1rem;
+}
+
+.container__main__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__main__total-rate {
+  text-align: right;
+  color: #382314;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container__main__total-month {
+  font-size: 1.5rem;
+  color: #93867b;
+}
+
+.container__main__total-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+  padding-top: 2rem;
+}
+
+.container__main__total-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+  padding-top: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container__main__total-box__text {
+  color: #93867b;
+  font-size: 1.5rem;
+}
+
+.container__main__total-box__sum {
+  font-size: 3rem;
+  color: #382314;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {

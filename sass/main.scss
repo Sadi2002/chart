@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
 
     &__balance {
       display: flex;
@@ -58,6 +59,117 @@ body {
         background: none;
         border: 2px solid $Very-pale-orange;
         left: -50%;
+      }
+    }
+  }
+  &__main {
+    padding: 2rem 2rem 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $Very-pale-orange;
+    border-radius: 1rem;
+
+    &-header {
+      font-size: 2.2rem;
+      color: $Dark-brown;
+      margin-bottom: 4rem;
+    }
+
+    &-chart {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid $Cream;
+
+      &__box {
+        width: 100%;
+        height: 17rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+
+        &-item {
+          width: 100%;
+          height: 30%;
+          background-color: $Soft-red;
+          border-radius: 0.5rem;
+
+          &--aqua {
+            height: 90%;
+            background-color: $Cyan;
+          }
+        }
+
+        &-item1 {
+          height: 30%;
+        }
+        &-item2 {
+          height: 60%;
+        }
+        &-item4 {
+          height: 55%;
+        }
+        &-item5 {
+          height: 40%;
+        }
+        &-item6 {
+          height: 75%;
+        }
+        &-item7 {
+          height: 45%;
+        }
+
+        &-text {
+          color: $Medium-brown;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &__total {
+      display: flex;
+      justify-content: space-between;
+
+      &-rate {
+        text-align: right;
+        color: $Dark-brown;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      &-month {
+        font-size: 1.5rem;
+        color: $Medium-brown;
+      }
+    }
+
+    &__total-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      padding-top: 2rem;
+
+      &2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        padding-top: 2rem;
+        justify-content: flex-end;
+      }
+
+      &__text {
+        color: $Medium-brown;
+        font-size: 1.5rem;
+      }
+
+      &__sum {
+        font-size: 3rem;
+        color: $Dark-brown;
+        font-weight: bold;
       }
     }
   }
