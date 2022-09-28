@@ -97,30 +97,81 @@ body {
           height: 30%;
           background-color: $Soft-red;
           border-radius: 0.5rem;
+          cursor: pointer;
+          position: relative;
+
+          &::before {
+            content: "$23.53";
+            position: absolute;
+            top: -70%;
+            left: -10%;
+            width: 120%;
+            height: 3rem;
+            background-color: $Dark-brown;
+            color: $Very-pale-orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            opacity: 0;
+            transition: all 0.5s;
+          }
+          &:hover::before {
+            opacity: 1;
+          }
 
           &--aqua {
             height: 90%;
             background-color: $Cyan;
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+              content: "$56.77";
+              top: -23%;
+            }
           }
         }
 
-        &-item1 {
-          height: 30%;
-        }
         &-item2 {
           height: 60%;
+
+          &::before {
+            content: "$35.23";
+            top: -35%;
+          }
         }
         &-item4 {
           height: 55%;
+
+          &::before {
+            content: "$32.19";
+            top: -37%;
+          }
         }
         &-item5 {
           height: 40%;
+
+          &::before {
+            content: "$27.91";
+            top: -50%;
+          }
         }
         &-item6 {
           height: 75%;
+
+          &::before {
+            content: "$47.59";
+            top: -27%;
+          }
         }
         &-item7 {
           height: 45%;
+
+          &::before {
+            content: "$29.17";
+            top: -45%;
+          }
         }
 
         &-text {
@@ -175,20 +226,25 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 575px) {
   .container {
     width: 70%;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 992px) {
   .container {
-    width: 60%;
+    width: 40%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 60%;
+    width: 30%;
 
     &__header {
       &__balance {
@@ -210,6 +266,6 @@ body {
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 45%;
+    width: 30%;
   }
 }

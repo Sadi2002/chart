@@ -154,35 +154,93 @@ body {
   height: 30%;
   background-color: #ec6246;
   border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.container__main-chart__box-item::before {
+  content: "$23.53";
+  position: absolute;
+  top: -70%;
+  left: -10%;
+  width: 120%;
+  height: 3rem;
+  background-color: #382314;
+  color: #fffaf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container__main-chart__box-item:hover::before {
+  opacity: 1;
 }
 
 .container__main-chart__box-item--aqua {
   height: 90%;
   background-color: #76b5bc;
+  cursor: pointer;
+  position: relative;
 }
 
-.container__main-chart__box-item1 {
-  height: 30%;
+.container__main-chart__box-item--aqua::before {
+  content: "$56.77";
+  top: -23%;
 }
 
 .container__main-chart__box-item2 {
   height: 60%;
 }
 
+.container__main-chart__box-item2::before {
+  content: "$35.23";
+  top: -35%;
+}
+
 .container__main-chart__box-item4 {
   height: 55%;
+}
+
+.container__main-chart__box-item4::before {
+  content: "$32.19";
+  top: -37%;
 }
 
 .container__main-chart__box-item5 {
   height: 40%;
 }
 
+.container__main-chart__box-item5::before {
+  content: "$27.91";
+  top: -50%;
+}
+
 .container__main-chart__box-item6 {
   height: 75%;
 }
 
+.container__main-chart__box-item6::before {
+  content: "$47.59";
+  top: -27%;
+}
+
 .container__main-chart__box-item7 {
   height: 45%;
+}
+
+.container__main-chart__box-item7::before {
+  content: "$29.17";
+  top: -45%;
 }
 
 .container__main-chart__box-text {
@@ -249,21 +307,27 @@ body {
   font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 575px) {
   .container {
     width: 70%;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .container {
-    width: 60%;
+    width: 40%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 60%;
+    width: 30%;
   }
   .container__header__balance {
     gap: 0.7rem;
@@ -280,7 +344,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 45%;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */
